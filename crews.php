@@ -53,25 +53,13 @@
                 <h1 class="mb-0 position-absolute top-50 start-50 translate-middle">Our Crews</h1>
             </section>
             <hr>
-            <div>
-                <ul class="nav nav-underline">
-                    <li class="nav-item"><a href="#" class="nav-link active">2023</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2022</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2021</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2020</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2019</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2018</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2017</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2016</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2015</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2014</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2013</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2012</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2011</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2010</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">2009</a></li>
-                </ul>
-            </div>
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a href="#" class="page-link"><i class="fa-solid fa-angle-left"></i></a></li>
+                <li class="page-item"><a href="#" class="page-link active">2023</a></li>
+                <li class="page-item"><a href="#" class="page-link">2022</a></li>
+                <li class="page-item"><a href="#" class="page-link">2021</a></li>
+                <li class="page-item"><a href="#" class="page-link"><i class="fa-solid fa-angle-right"></i></a></li>
+            </ul>
             <hr>
             <section>
                 <h2 class="text-center">Vehicle Dynamics</h2>
