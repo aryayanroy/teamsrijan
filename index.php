@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Srijan | Our Hearts Don't Beat. They Rev...</title>
     <link rel="shortcut icon" href="assets/public/branding/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="cdn/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cdn/fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="stylesheet" href="cdn/owl.carousel.min.css">
-    <link rel="stylesheet" href="cdn/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="assets/public/css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -197,9 +200,9 @@
         </div>
     </footer>
 </body>
-<script src="cdn/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-<script src="cdn/jquery-3.6.4.min.js"></script>
-<script src="cdn/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
