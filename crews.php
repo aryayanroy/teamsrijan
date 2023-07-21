@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500;1,700&family=Signika:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
@@ -54,7 +54,23 @@
             </section>
             <hr>
             <div>
-                
+                <ul class="nav nav-underline">
+                    <li class="nav-item"><a href="#" class="nav-link active">2023</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2022</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2021</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2020</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2019</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2018</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2017</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2016</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2015</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2014</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2013</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2012</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2011</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2010</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">2009</a></li>
+                </ul>
             </div>
             <hr>
             <section>
