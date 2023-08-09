@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root{
             font-size: 14px;
@@ -18,46 +18,20 @@
         body{
             font-family: Signika, sans-serif;
         }
-        h1{
-            font-weight: 600;
+        h1,h2,h3,h4,h5,h6{
+            font-weight: bold;
         }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <div class="container-xxl">
-            <a href="" class="navbar-brand"><img src="../assets/public/branding/team-srijan-logo-white.webp" alt="Team Srijan" height=32></a>
+            <div class="container-xl">
+            <a href="/admin" class="navbar-brand"><img src="../assets/public/branding/team-srijan-logo-white.webp" alt="Team Srijan" height=32></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#header-collapse"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                 <div id="header-collapse" class="collapse navbar-collapse flex-grow-0">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-wrench me-2"></i><span>Admin</span></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-people-group fa-sm me-2"></i><span>Leaders</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-gear me-2"></i><span>Site settings</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-wrench me-2"></i><span>Leader</span></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-warehouse fa-sm me-2"></i><span>Garage</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-people-group fa-sm me-2"></i><span>Crews</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-hand-holding-dollar fa-sm me-2"></i><span>Crowdfunding</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-pen me-2"></i><span>Member</span></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-house fa-sm me-2"></i><span>Home</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-regular fa-newspaper fa-sm me-2"></i><span>Updates</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-indian-rupee-sign fa-sm me-2"></i><span>Sponsors</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-trophy fa-sm me-2"></i><span>Competitions</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-flag-checkered me-2"></i><span>Milestones</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-list-ul me-2"></i><span>Overview</span></a></li>
-                                <li><a href="profile" class="dropdown-item"><i class="fa-solid fa-flag-checkered me-2"></i><span>Milestones</span></a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item"><a href="/admin" class="btn btn-dark"><i class="fa-solid fa-house me-2"></i><span>Home</span></a></li>
                         <li class="nav-item"><a href="history" class="btn btn-dark"><i class="fa-solid fa-clock-rotate-left me-2"></i><span>Activity</span></a></li>
                         <li class="nav-item dropdown">
                             <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-regular fa-circle-user me-2"></i><span>Hailee Steinfeld</span></button>
@@ -72,13 +46,60 @@
             </div>
         </nav>
     </header>
-    <main class="container-xxl">
-        <article class="py-3">
+    <main class="flex-grow-1 bg-body-tertiary">
+        <article class="container-xxl py-3">
             <h1>Welcome!</h1>
+            <div class="accordion">
+                <section class="accordion-item">
+                    <button type="button" class="accordion-button fw-bold fs-5" data-bs-toggle="collapse" data-bs-target="#admin-nav">Admin</button>
+                    <div id="admin-nav" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-people-group fa-lg me-2"></i><span>Manage Leaders</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="site-settings" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-gear fa-lg me-2"></i><span>Site settings</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion-item">
+                    <button type="button" class="accordion-button fw-bold fs-5" data-bs-toggle="collapse" data-bs-target="#leader-nav">Leader</button>
+                    <div id="leader-nav" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-warehouse fa-lg me-2"></i><span>Garage</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="site-settings" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-people-group fa-lg me-2"></i><span>Manage Crews</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-hand-holding-dollar fa-lg me-2"></i><span>Crowdfunding</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion-item">
+                    <button type="button" class="accordion-button fw-bold fs-5" data-bs-toggle="collapse" data-bs-target="#member-nav">Member</button>
+                    <div id="member-nav" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-house fa-lg me-2"></i><span>Home page</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="site-settings" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-regular fa-newspaper fa-lg me-2"></i><span>Updates</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-indian-rupee-sign fa-lg me-2"></i><span>Sponsors</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-trophy fa-lg me-2"></i><span>Competitions</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="site-settings" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-flag-checkered fa-lg me-2"></i><span>Milestones</span></a></div>
+                                <div class="col-md-6 col-lg-4 col-xl-3"><a href="leader" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fa-solid fa-list-ul fa-lg me-2"></i><span>Overview</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </article>
     </main>
-    <footer>
-
+    <footer class="navbar bg-body-secondary">
+        <div class="container-xl flex-column flex-sm-row">
+            <nav class="nav">
+                <a href="#" class="nav-link link-body-emphasis"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="nav-link link-body-emphasis"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="nav-link link-body-emphasis"><i class="fa-brands fa-linkedin"></i></a>
+            </nav>
+            <small class="text-body-emphasis">© 2023 Team Srijan</small>
+        </div>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
