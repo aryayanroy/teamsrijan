@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel | Team Srijan</title>
+    <title>Updates | Team Srijan</title>
     <link rel="shortcut icon" href="../assets/public/branding/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,7 +24,15 @@
     </header>
     <main class="flex-grow-1 bg-body-tertiary">
         <article class="container-xxl py-3">
-            <h1>Index page</h1>
+            <h1>Updates</h1>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Sl</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
         </article>
     </main>
     <footer class="navbar bg-body-secondary">
@@ -46,10 +54,10 @@
         <div class="offcanvas-body">
             <div class="list-group list-group-flush">
                 <a href="settings" class="list-group-item list-group-item-action">Settings</a>
-                <a href="index" class="list-group-item list-group-item-action active">Index</a>
+                <a href="index" class="list-group-item list-group-item-action">Index</a>
                 <a href="garage" class="list-group-item list-group-item-action">Garage</a>
                 <a href="competitions" class="list-group-item list-group-item-action">Competitions</a>
-                <a href="updates" class="list-group-item list-group-item-action">Updates</a>
+                <a href="updates" class="list-group-item list-group-item-action active">Updates</a>
                 <a href="sponsors" class="list-group-item list-group-item-action">Partners</a>
                 <a href="milestones" class="list-group-item list-group-item-action">Milestones</a>
                 <a href="overview" class="list-group-item list-group-item-action">Overview</a>
