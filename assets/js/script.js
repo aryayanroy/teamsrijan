@@ -2,11 +2,6 @@ $(document).ready(function(){
     
     var load_path = "/assets/html/";
 
-    $.get(load_path+"head.html", function(data){
-        $("head").prepend(data);
-        console.log("head loaded");
-    })
-
     var header = $("#page-header");
 
     header.load(load_path+"header.html",function(){

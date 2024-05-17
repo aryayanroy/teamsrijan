@@ -98,6 +98,12 @@ footer a{
 .card-img-top{
     object-fit: cover;
 }
+.owl-dot>span{
+    background: #607D8B !important;
+}
+.owl-dot.active>span{
+    background: #D50000 !important;
+}
 
 /*laptop*/
 @media screen and (min-width: 768px){
