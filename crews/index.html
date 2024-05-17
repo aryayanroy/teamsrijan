@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Crews (2024) - Team Srijan | Formula Student Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header id="page-header"></header>
+    <main class="flex-grow-1 py-3">
+        <article class="container-xxl">
+            <h1 class="text-center">OUR CREWS</h1>
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a href="./" class="page-link">&laquo;</a></li>
+                    <li class="page-item active"><a href="./" class="page-link">2024</a></li>
+                    <li class="page-item"><a href="2023" class="page-link">2023</a></li>
+                    <li class="page-item"><a href="2022" class="page-link">2022</a></li>
+                    <li class="page-item"><a href="2023" class="page-link">&raquo;</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <section>
+                <h4>Vehicle Dynamics</h4>
+                <div class="owl-carousel owl-theme crews-carousel">
+                    <div class="item">
+                        <div class="card">
+                            <div class="ratio ratio-1x1"><img src="https://cdn-5.motorsport.com/images/amp/0ZR4WyL0/s1000/carlos-sainz-jr-ferrari-1.jpg" alt="Carlos Sainz" class="card-img-top"></div>
+                            <div class="card-body">
+                                <h6>Carlos Sainz</h6>
+                                <nav class="nav nav-justified">
+                                    <a href="mailto:" class="nav-item"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                                    <a href="#" class="nav-item"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h4>Vehicle Dynamics</h4>
+                <div class="owl-carousel owl-theme crews-carousel">
+                    <div class="item">
+                        <div class="card">
+                            <div class="ratio ratio-1x1"><img src="https://cdn-5.motorsport.com/images/amp/0ZR4WyL0/s1000/carlos-sainz-jr-ferrari-1.jpg" alt="Carlos Sainz" class="card-img-top"></div>
+                            <div class="card-body">
+                                <h6>Carlos Sainz</h6>
+                                <nav class="nav nav-justified">
+                                    <a href="mailto:" class="nav-item"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                                    <a href="#" class="nav-item"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <aside id="bottom-menu"></aside>
+    <footer id="page-footer"></footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".crews-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1,
+                    stagePadding: 25
+                },
+                425:{
+                    items:2
+                },
+                576:{
+                    items:3,
+                    stagePadding: 25
+                },
+                768:{
+                    items:4
+                },
+                992:{
+                    items:5
+                }
+            }
+        })
+    })
+</script>
+</html>
