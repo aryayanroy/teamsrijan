@@ -31,6 +31,9 @@ h5, .h5{
 h6, .h6{
     font-size: calc(1.4em + 0.6vw);
 }
+.text-justify{
+    text-align: justify;
+}
 #page-header{
     background: url(../images/header-bg-left.webp) left / contain no-repeat, url(../images/header-bg-right.webp) right / contain no-repeat #B71C1C;
     transition: box-shadow 0.3s;
