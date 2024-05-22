@@ -14,26 +14,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <style>
-        .progress-ul{
-            border-left: 4px solid red;
-            list-style: none;
-        }
-        .progress-ul>li{
-            margin-left: 10px;
+        section{
+            margin: auto;
             position: relative;
+            max-width: 600px;
+            border-bottom: 3px dashed #607D8B;
         }
-        .progress-ul>li::before{
+        section:nth-of-type(2n-1){
+            padding: 3em 0 2em 2em;
+            border-left: 3px dashed #607D8B;
+        }
+        section:nth-of-type(2n){
+            padding: 3em 2em 2em 0;
+            border-right: 3px dashed #607D8B;
+        }
+        section::before{
             content: "";
             position: absolute;
+            top: 50%;
             transform: translate(-50%, -50%);
-            left: -12px;
-            height: 18px;
-            width: 18px;
-            background-color: #D50000;
+            width: 1.8em;
+            height: 1.8em;
             border-radius: 50%;
+            border: 1px solid white;
+            background-color: #D50000;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         }
-        .progress-ul>li:not(:first-child){
-            margin-top: 3em;
+        section:nth-of-type(2n-1)::before{
+            left: 0;
+        }
+        section:nth-of-type(2n)::before{
+            left: 100%;
         }
     </style>
 </head>
@@ -43,12 +54,102 @@
         <article class="container-xxl">
             <h1 class="text-center">Our Milestones</h1>
             <section>
-                <ul class="progress-ul">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ad nulla quam provident dicta iste voluptatibus deleniti sapiente laboriosam voluptates voluptate vel adipisci fugit quo reprehenderit voluptatem! Commodi, dignissimos ab!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ad nulla quam provident dicta iste voluptatibus deleniti sapiente laboriosam voluptates voluptate vel adipisci fugit quo reprehenderit voluptatem! Commodi, dignissimos ab!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ad nulla quam provident dicta iste voluptatibus deleniti sapiente laboriosam voluptates voluptate vel adipisci fugit quo reprehenderit voluptatem! Commodi, dignissimos ab!</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ad nulla quam provident dicta iste voluptatibus deleniti sapiente laboriosam voluptates voluptate vel adipisci fugit quo reprehenderit voluptatem! Commodi, dignissimos ab!</li>
-                </ul>
+                <h3>2015</h3>
+                <h5>FS Italy</h5>
+                <p>2nd Best Indian Team in the Design Event</p>
+            </section>
+            <section>
+                <h3>2016</h3>
+                <h5>Formula Bharat</h5>
+                <p>Only Car to clear TI with a RE Engine</p>
+            </section>
+            <section>
+                <h3>2017</h3>
+                <h5>Formula Bharat</h5>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Static Rank</th>
+                        <td>6th</td>
+                    </tr>
+                    <tr>
+                        <th>Overall</th>
+                        <td>12th</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>2018</h3>
+                <h5>Formula Bharat</h5>
+                <table class="table table-striped">
+                    <tr>
+                        <th>B-Plan</th>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <th>Design</th>
+                        <td>6th</td>
+                    </tr>
+                    <tr>
+                        <th>Overall</th>
+                        <td>11th</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>2019</h3>
+                <h5>Formula Bharat</h5>
+                <table class="table table-striped">
+                    <tr>
+                        <th>B-Plan</th>
+                        <td>8th</td>
+                    </tr>
+                    <tr>
+                        <th>Overall</th>
+                        <td>16th</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>2021</h3>
+                <h5>Formula Bharat</h5>
+                <table class="table table-striped">
+                    <tr>
+                        <th>B-Plan</th>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <th>Overall</th>
+                        <td>2nd</td>
+                    </tr>
+                    <tr>
+                        <th>Overall</th>
+                        <td>11th</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>2022</h3>
+                <h5>Formula Green</h5>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Cost Presentation</th>
+                        <td>1st</td>
+                    </tr>
+                    <tr>
+                        <th>Overall</th>
+                        <td>2nd</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>2023</h3>
+                <h5>Formula Bhart</h5>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Overall</th>
+                        <td>14th Out of 52 Teams</td>
+                    </tr>
+                </table>
             </section>
         </article>
     </main>
