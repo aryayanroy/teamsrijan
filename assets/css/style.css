@@ -1,12 +1,3 @@
-:root{
-    font-size: 16px;
-    --bs-danger: #B71C1C;
-    --bs-danger-rgb: 183, 28, 28;
-    --bs-warning: #F57F17;
-    --bs-warning-rgb: 245, 127, 23;
-    --bs-primary: #1A237E;
-    --bs-primary-rgb: 26, 35, 126;
-}
 body{
     font-family: "Inter", sans-serif;
 }
