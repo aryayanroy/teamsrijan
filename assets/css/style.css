@@ -89,12 +89,6 @@ footer a{
     color: white;
     text-decoration: none;
 }
-.page-title{
-    margin-bottom: 1em;
-    text-align: center;
-    font-weight: bold;
-    border-bottom: 2px solid #B0BEC5;
-}
 .card-img-top{
     object-fit: cover;
 }
