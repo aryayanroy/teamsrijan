@@ -15,7 +15,7 @@ $(document).ready(function(){
     });
 
     $("#page-footer").load(load_path+"footer.html",function(){
-        $(this).addClass("px-3 py-5 px-sm-5 text-white");
+        $(this).addClass("px-3 pt-5 pb-3 px-sm-5 text-white");
         console.log("footer loaded");
     });
 
