@@ -14,38 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <style>
-        section{
-            margin: auto;
-            position: relative;
-            max-width: 600px;
-            border-bottom: 3px dashed #607D8B;
-        }
-        section:nth-of-type(2n-1){
-            padding: 3em 0 2em 2em;
-            border-left: 3px dashed #607D8B;
-        }
-        section:nth-of-type(2n){
-            padding: 3em 2em 2em 0;
-            border-right: 3px dashed #607D8B;
-        }
-        section::before{
-            content: "";
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 1.8em;
-            height: 1.8em;
-            border-radius: 50%;
-            border: 1px solid white;
-            background-color: #D50000;
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-        }
-        section:nth-of-type(2n-1)::before{
-            left: 0;
-        }
-        section:nth-of-type(2n)::before{
-            left: 100%;
-        }
+        section{margin:auto;position:relative;max-width:600px;border-bottom:3px dashed #607d8b}section:nth-of-type(2n-1){padding:3em 0 2em 2em;border-left:3px dashed #607d8b}section:nth-of-type(2n){padding:3em 2em 2em 0;border-right:3px dashed #607d8b}section::before{content:"";position:absolute;top:50%;transform:translate(-50%,-50%);width:1.8em;height:1.8em;border-radius:50%;border:1px solid #fff;background-color:#d50000;box-shadow:3px 3px 3px rgba(0,0,0,.5)}section:nth-of-type(2n-1)::before{left:0}section:nth-of-type(2n)::before{left:100%}
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
