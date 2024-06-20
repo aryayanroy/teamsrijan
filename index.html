@@ -136,6 +136,19 @@
     </main>
     <aside id="bottom-menu"></aside>
     <footer id="page-footer"></footer>
+    <section class="py-2 sticky-bottom" style="background: url(assets/images/home/countdown-bg.webp) center / contain repeat #0D47A1">
+        <div class="container-fluid">
+            <div class="row gy-3 align-items-center">
+                <div class="col-md-4">
+                    <h5 class="mb-0 text-light">See You'll at the Tracks in:</h5>
+                </div>
+                <div class="col-3 col-md-2"><h4 id="days" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Days</h6></div>
+                <div class="col-3 col-md-2"><h4 id="hrs" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Hours</h6></div>
+                <div class="col-3 col-md-2"><h4 id="mins" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Minutes</h6></div>
+                <div class="col-3 col-md-2"><h4 id="secs" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Seconds</h6></div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -167,6 +180,19 @@
                 }
             }
         })
+
+        var final = new Date("1 22, 2025 00:00:00").getTime();
+        convert = 1000*60*60;
+        setInterval(function(){
+            var now = new Date().getTime();
+            var distance = final - now;
+            if(distance > 0){
+                $("#days").text(Math.floor(distance / (convert * 24)));
+                $("#hrs").text(Math.floor((distance % (convert * 24)) / (convert)));
+                $("#mins").text(Math.floor((distance % (convert)) / (convert/60)));
+                $("#secs").text(Math.floor((distance % (convert/60)) / 1000));
+            }
+        }, 1000)
     })
 </script>
 </html>
