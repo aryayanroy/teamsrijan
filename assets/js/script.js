@@ -13,10 +13,12 @@ $(document).ready(function(){
         $(this).addClass("offcanvas offcanvas-bottom");
         console.log("bottom aside loaded");
     });
-
+    
     $("#page-footer").load(load_path+"footer.html",function(){
         $(this).addClass("px-3 pt-5 px-sm-5 text-white");
         console.log("footer loaded");
+        var currentYear = new Date().getFullYear();
+        $("#copyright-year").html(currentYear);
     });
 
     $(window).scroll(function(){
@@ -27,4 +29,5 @@ $(document).ready(function(){
             header.css("box-shadow","0 6px 8px rgba(0, 0, 0, 0.4)");
         }
     })
+
 })
