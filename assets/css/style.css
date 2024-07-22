@@ -50,9 +50,6 @@ h6, .h6{
     transform: translateX(-50%);
     transition: width 0.2s;
 }
-.dropdown-toggle::after{
-    transition: transform 0.3s;
-}
 .dropdown-menu{
     min-width: 200px;
     padding: 6px;
@@ -116,9 +113,6 @@ footer a{
     #page-header .dropdown-toggle:hover+.dropdown-menu, #page-header .dropdown-menu:hover{
         display: block;
         right: 0;
-    }
-    .dropdown-toggle:hover::after{
-        transform: rotate(180deg);
     }
     .dropdown-item:hover{
         padding-left: 14px;
