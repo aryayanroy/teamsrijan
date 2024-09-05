@@ -137,25 +137,12 @@
     </main>
     <aside id="bottom-menu"></aside>
     <footer id="page-footer"></footer>
-    <section class="py-2 sticky-bottom" style="background: url(assets/images/home/countdown-bg.webp) center / contain repeat #0D47A1">
-        <div class="container-fluid">
-            <div class="row gy-3 align-items-center">
-                <div class="col-md-4">
-                    <h5 class="mb-0 text-light">See You'll at the Tracks in:</h5>
-                </div>
-                <div class="col-3 col-md-2"><h4 id="days" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Days</h6></div>
-                <div class="col-3 col-md-2"><h4 id="hrs" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Hours</h6></div>
-                <div class="col-3 col-md-2"><h4 id="mins" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Minutes</h6></div>
-                <div class="col-3 col-md-2"><h4 id="secs" class="mb-0 text-light text-center">0</h4><h6 class="mb-0 text-light text-center">Seconds</h6></div>
-            </div>
-        </div>
-    </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
 <script>
-    $(document).ready(function(){$("#sponsors").owlCarousel({loop:!0,margin:50,autoplay:!0,autoplayTimeout:3e3,autoplayHoverPause:!0,responsive:{0:{items:1},425:{items:2},576:{items:3},768:{items:4},992:{items:5}}});var e=new Date("1 22, 2025 00:00:00").getTime();convert=36e5,setInterval(function(){var o=new Date().getTime(),t=e-o;t>0&&($("#days").text(Math.floor(t/(24*convert))),$("#hrs").text(Math.floor(t%(24*convert)/convert)),$("#mins").text(Math.floor(t%convert/(convert/60))),$("#secs").text(Math.floor(t%(convert/60)/1e3)))},1e3)});
+    $(document).ready(function(){$("#sponsors").owlCarousel({loop:!0,margin:50,autoplay:!0,autoplayTimeout:3e3,autoplayHoverPause:!0,responsive:{0:{items:1},425:{items:2},576:{items:3},768:{items:4},992:{items:5}}})});
 </script>
 </html>
