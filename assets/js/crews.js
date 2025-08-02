@@ -5,7 +5,7 @@ $(document).ready(function () {
         const $members = $("#members");
 
         function error_print(msg){
-            $members.html(`<div class="col-12"><p class="text-center">${msg}</p></div>`);
+            $members.html(`<div class="col-12"><p class="mb-0 alert alert-danger text-center">${msg}</p></div>`);
         }
 
         $.get(filename, function (data) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
             function card(member){
 
-                const image = `/assets/images/members/${member.image}`;
+                const image = `/assets/images/crews/${member.image}`;
 
                 let teams = `<p class="card-text d-flex flex-wrap">`;
                 for(const key of member.team){
@@ -42,10 +42,10 @@ $(document).ready(function () {
                 return `<div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card h-100">
                         <div class="ratio ratio-1x1"><img src="${image}" alt="${member.name}" class="card-img-top"></div>
-                        <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="card-body d-flex flex-column">
                             <h4 class="card-title">${member.name}</h4>
                             ${teams}
-                            <nav class="nav nav-justified">${contacts}</nav>
+                            <nav class="mt-auto nav nav-justified">${contacts}</nav>
                         </div>
                     </div>
                 </div>`
@@ -64,7 +64,7 @@ $(document).ready(function () {
                     }
                 }
                 if (!member_found) {
-                    error_print("No members found.");
+                    error_print(`<i class="fa-solid fa-user-xmark me-2"></i><span>No members found.</span>`);
                 }
             }
 

@@ -7,71 +7,223 @@
   "teams": {
     "aero": "Aerodynamics",
     "dt": "Power Train",
-    "tech": "Technical"
+    "tech": "Technical",
+    "vd": "Vehicle Dynamics",
+    "brakes": "Brakes"
   },
   "contact_methods": {
-    "instagram": {
-      "icon": "fa-regular fa-envelope",
-      "url": "https://www.instagram.com/"
-    },
     "email": {
-      "icon": "fa-brands fa-instagram",
+      "icon": "fa-regular fa-envelope",
       "url": "mailto:"
     },
+    "instagram": {
+      "icon": "fa-brands fa-instagram",
+      "url": "https://www.instagram.com/"
+    },
     "facebook": {
+      "icon": "fa-brands fa-facebook-f",
+      "url": "https://www.facebook.com/"
+    },
+    "linkedin": {
       "icon": "fa-brands fa-facebook-f",
       "url": "https://www.facebook.com/"
     }
   },
   "members": [
     {
-      "name": "Ritwik Kurly",
-      "batch": 2022,
-      "team": ["aero"],
-      "image": "ritwik-kurly.webp",
+      "name": "Rishav Kumar",
+      "batch": 2023,
+      "team": ["brakes"],
       "contacts": {
-        "email": "ritwik@email.com",
-        "instagram": "ritwikkurly"
+        "email": "rishav3522@gmail.com",
+        "linkedin": "rishav-kumar-8a651328b"
       }
     },
     {
-      "name": "Soham Paul",
-      "batch": 2022,
-      "team": ["aero"],
-      "image": "soham-paul.webp",
+      "name": "Pranit Pranav",
+      "batch": 2023,
+      "team": ["chasis"],
       "contacts": {
-        "email": "soham@gmail.com",
-        "instagram": "www.instagram.com/sohampaul"
+        "instagram": "that_arbitraryguy",
+        "linkedin": "pranit-pranav-584a4627b"
       }
     },
     {
-      "name": "Aryayan Roy",
+      "name": "Prince Raj",
       "batch": 2024,
-      "team": ["dt", "tech"],
-      "image": "aryayan-roy.webp",
+      "team": ["chasis"],
       "contacts": {
-        "email": "aryayan@gmail.com",
-        "facebook": "www.facebook.com/aryuay.php"
+        "instagram": "_instaprince._",
+        "linkedin": "prince-raj-598440336"
       }
     },
     {
-      "name": "Tejas",
+      "name": "Ayush Nigam",
+      "batch": 2023,
+      "team": ["dt"],
+      "contacts": {
+        "email": "mavlsound1602@gmail.com",
+        "linkedin": "ayush-nigam-5795022b0"
+      }
+    },
+    {
+      "name": "Atulya Kumar Singh",
+      "batch": 2023,
+      "team": ["aero"],
+      "contacts": {
+        "email": "atulya239@gmail.com",
+        "linkedin": "atulyaks"
+      }
+    },
+    {
+      "name": "Ayush Raj",
+      "batch": 2024,
+      "team": ["aero"],
+      "contacts": {
+        "instagram": "ayushraj_03",
+        "linkedin": "rajayush-bit"
+      }
+    },
+    {
+      "name": "Ajitesh Verma",
+      "batch": 2023,
+      "team": ["brakes"],
+      "contacts": {
+        "email": "btech10613.23@bitmesra.ac.in",
+        "linkedin": "ajitesh-verma-09b07a272"
+      }
+    },
+    {
+      "name": "KSHITIJ SINGH",
+      "batch": 2023,
+      "team": [""],
+      "contacts": {
+        "email": "btech10430.23@bitmesra.ac.in",
+        "instagram": "kshitijsingh2024"
+      }
+    },
+    {
+      "name": "Yash Singh",
+      "batch": 2023,
+      "team": ["dt"],
+      "contacts": {
+        "email": "yashsinghckt83@gmail.com",
+        "linkedin": "yash-singh-4ab85228b"
+      }
+    },
+    {
+      "name": "Anom Baladkar",
+      "batch": 2024,
+      "team": ["brakes"],
+      "contacts": {
+        "email": "anombaladkar10@gmail.com",
+        "linkedin": "anom-baladkar-385245357"
+      }
+    },
+    {
+      "name": "Jagrati Singh",
+      "batch": 2023,
+      "team": ["brakes"],
+      "contacts": {
+        "email": "singhjagrati307@gmail.com",
+        "linkedin": "jagrati-singh-0b1a0127b"
+      }
+    },
+    {
+      "name": "Brianson John Lakra",
       "batch": 2024,
       "team": ["dt"],
-      "image": "tejas.jpg",
       "contacts": {
-        "email": "tejas@gmail.com",
-        "instagram": "www.instagram.com/tejas"
+        "instagram": "l_johnlakra_l",
+        "linkedin": "brianson-john-lakra-91971836a"
       }
     },
     {
-      "name": "Arijit",
+      "name": "Shashwat Shantanu",
+      "batch": 2023,
+      "team": ["dt"],
+      "contacts": {
+        "email": "shas.shantanu@gmail.com",
+        "linkedin": "shashwatshantanu"
+      }
+    },
+    {
+      "name": "Shashwat Pankaj Singh",
+      "batch": 2023,
+      "team": ["chasis"],
+      "contacts": {
+        "email": "shashwatpankajs@gmail.com",
+        "linkedin": "shashwat-pankaj-singh"
+      }
+    },
+    {
+      "name": "Saksham Khalkho",
+      "batch": 2023,
+      "team": ["vd"],
+      "contacts": {
+        "email": "sakshamkhalkho716@gmail.com"
+      }
+    },
+    {
+      "name": "Arnav Sarna",
+      "batch": 2023,
+      "team": ["dt"],
+      "contacts": {
+        "email": "arv.sarna29@gmail.com",
+        "linkedin": "arnav-sarna2905"
+      }
+    },
+    {
+      "name": "Nirnay Sinha",
+      "batch": 2023,
+      "team": ["chasis"],
+      "contacts": {
+        "email": "nirnaysinha492004@gmail.com",
+        "linkedin": "nirnay-sinha"
+      }
+    },
+    {
+      "name": "Abhinav Kumar Singh",
+      "batch": 2024,
+      "team": ["dt"],
+      "contacts": {
+        "email": "kumarsinghabhinav103@gmail.com",
+        "instagram": "abhinav_singh_rjp"
+      }
+    },
+    {
+      "name": "TEJASVA SINGH",
       "batch": 2022,
       "team": ["dt"],
-      "image": "arijit-basu.webp",
       "contacts": {
-        "email": "arijit@gmail.com",
-        "instagram": "www.instagram.com/arijiy"
+        "email": "tejsvva@gmail.com",
+        "instagram": "tejsvv"
+      }
+    },
+    {
+      "name": "Himanshu",
+      "batch": 2023,
+      "team": ["dt"],
+      "contacts": {
+        "email": "2singhimanshu4@gmail.com",
+        "instagram": "venomous.6996"
+      }
+    },
+    {
+      "name": "Kumar Shresth",
+      "batch": 2022,
+      "team": ["vd"],
+      "contacts": {
+        "email": "justshresth@gmail.com",
+        "linkedin": "justshresth"
+      }
+    },
+    {
+      "name": "Ayush Keshri",
+      "batch": 2023,
+      "team": ["vd"],
+      "contacts": {
+        "linkedin": "keshriayush"
       }
     }
   ]

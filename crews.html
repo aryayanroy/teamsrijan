@@ -51,14 +51,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
 <script>
-    $(document).ready(function () {
+$(document).ready(function () {
         const filename = "/assets/json/members.json";
         const $batches = $("#batches");
         const $teams = $("#teams");
         const $members = $("#members");
 
         function error_print(msg){
-            $members.html(`<div class="col-12"><p class="text-center">${msg}</p></div>`);
+            $members.html(`<div class="col-12"><p class="mb-0 alert alert-danger text-center">${msg}</p></div>`);
         }
 
         $.get(filename, function (data) {
@@ -117,7 +117,7 @@
                     }
                 }
                 if (!member_found) {
-                    error_print("No members found.");
+                    error_print(`<i class="fa-solid fa-user-xmark me-2"></i><span>No members found.</span>`);
                 }
             }
 
@@ -132,6 +132,5 @@
             error_print("Failed to load members.");
         });
     });
-
 </script>
 </html>
