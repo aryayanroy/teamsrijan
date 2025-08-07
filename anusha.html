@@ -32,32 +32,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
-<script>
-  fetch("https://ipinfo.io/json?token=c8b73c689a7adb")
-    .then(res => res.json())
-    .then(data => {
-      const browser = navigator.userAgent;
-      console.log(navigator)
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-      fetch("https://script.google.com/macros/s/AKfycbw1eSy4AoNoWFzleDkWqDOk2EwhkCEiqHkPldQspkQ2rpyc-mJplT7XHeGktPT8a9Nq/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          ip: data.ip,
-          city: data.city,
-          region: data.region,
-          country: data.country,
-          org: data.org,
-          browser: browser
-        })
-      })
-      .then(res => res.text())
-      .then(txt => console.log("Logged:", txt))
-      .catch(err => console.error("POST error:", err));
-    })
-    .catch(err => console.error("ipinfo error:", err));
+<script>
+  $.get("https://ipinfo.io?token=c8b73c689a7adb", function(data) {
+    const browser = navigator.userAgent;
+
+    const postData = {
+      ip: data.ip,
+      city: data.city,
+      region: data.region,
+      country: data.country,
+      loc: data.loc,
+      org: data.org,
+      browser: browser,
+      time: new Date().toLocaleString()
+    };
+
+    $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbw1eSy4AoNoWFzleDkWqDOk2EwhkCEiqHkPldQspkQ2rpyc-mJplT7XHeGktPT8a9Nq/exec",
+      method: "POST",
+      data: postData,
+      success: function(response) {
+        console.log("✅ Success:", response);
+      },
+      error: function(xhr, status, error) {
+        console.error("❌ POST error:", error);
+      }
+    });
+  });
 </script>
 
 
