@@ -33,24 +33,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
 <script>
-fetch("https://ipinfo.io/json?token=c8b73c689a7adb")
-  .then(res => res.json())
-  .then(data => {
-    const browser = navigator.userAgent;
+  fetch("https://ipinfo.io/json?token=c8b73c689a7adb")
+    .then(res => res.json())
+    .then(data => {
+      const browser = navigator.userAgent;
+      console.log(navigator)
 
-    fetch("https://script.google.com/macros/s/AKfycbx-Ae0cowobgB6tEGIg7Cw6xlqegs8Aa-4rrP_K6m_YkF8x4L1g5alKNlKdWhRRPRN5/exec", {
-      method: "POST",
-      body: JSON.stringify({
-        ip: data.ip,
-        city: data.city,
-        region: data.region,
-        country: data.country,
-        org: data.org,
-        browser: browser
-      }),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    });
-  });
+      fetch("https://script.google.com/macros/s/AKfycbw1eSy4AoNoWFzleDkWqDOk2EwhkCEiqHkPldQspkQ2rpyc-mJplT7XHeGktPT8a9Nq/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          ip: data.ip,
+          city: data.city,
+          region: data.region,
+          country: data.country,
+          org: data.org,
+          browser: browser
+        })
+      })
+      .then(res => res.text())
+      .then(txt => console.log("Logged:", txt))
+      .catch(err => console.error("POST error:", err));
+    })
+    .catch(err => console.error("ipinfo error:", err));
 </script>
+
+
+
