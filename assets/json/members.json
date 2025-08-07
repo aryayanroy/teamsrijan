@@ -31,6 +31,7 @@
   },
   "members": [
     {
+      "image": "rishav_kumar.webp",
       "name": "Rishav Kumar",
       "batch": 2023,
       "team": ["brakes"],
@@ -40,6 +41,7 @@
       }
     },
     {
+      "image": "pranit_pranav.webp",
       "name": "Pranit Pranav",
       "batch": 2023,
       "team": ["chasis"],
@@ -49,6 +51,7 @@
       }
     },
     {
+      "image": "prince_raj.webp",
       "name": "Prince Raj",
       "batch": 2024,
       "team": ["chasis"],
@@ -58,6 +61,7 @@
       }
     },
     {
+      "image": "ayush_nigam.webp",
       "name": "Ayush Nigam",
       "batch": 2023,
       "team": ["dt"],
@@ -67,6 +71,7 @@
       }
     },
     {
+      "image": "atulya_kumar_singh.webp",
       "name": "Atulya Kumar Singh",
       "batch": 2023,
       "team": ["aero"],
@@ -76,6 +81,7 @@
       }
     },
     {
+      "image": "ayush_raj.webp",
       "name": "Ayush Raj",
       "batch": 2024,
       "team": ["aero"],
@@ -85,6 +91,7 @@
       }
     },
     {
+      "image": "ajitesh_verma.webp",
       "name": "Ajitesh Verma",
       "batch": 2023,
       "team": ["brakes"],
@@ -94,6 +101,7 @@
       }
     },
     {
+      "image": "kshitij_singh.webp",
       "name": "KSHITIJ SINGH",
       "batch": 2023,
       "team": [""],
@@ -103,6 +111,7 @@
       }
     },
     {
+      "image": "yash_singh.webp",
       "name": "Yash Singh",
       "batch": 2023,
       "team": ["dt"],
@@ -112,15 +121,7 @@
       }
     },
     {
-      "name": "Anom Baladkar",
-      "batch": 2024,
-      "team": ["brakes"],
-      "contacts": {
-        "email": "anombaladkar10@gmail.com",
-        "linkedin": "anom-baladkar-385245357"
-      }
-    },
-    {
+      "image": "jagrati_singh.webp",
       "name": "Jagrati Singh",
       "batch": 2023,
       "team": ["brakes"],
@@ -130,6 +131,7 @@
       }
     },
     {
+      "image": "brianson_john_lakra.webp",
       "name": "Brianson John Lakra",
       "batch": 2024,
       "team": ["dt"],
@@ -139,6 +141,7 @@
       }
     },
     {
+      "image": "shashwat_shantanu.webp",
       "name": "Shashwat Shantanu",
       "batch": 2023,
       "team": ["dt"],
@@ -148,6 +151,7 @@
       }
     },
     {
+      "image": "shashwat_pankaj_singh.webp",
       "name": "Shashwat Pankaj Singh",
       "batch": 2023,
       "team": ["chasis"],
@@ -157,6 +161,7 @@
       }
     },
     {
+      "image": "saksham_khalkho.webp",
       "name": "Saksham Khalkho",
       "batch": 2023,
       "team": ["vd"],
@@ -165,6 +170,7 @@
       }
     },
     {
+      "image": "arnav_sarna.webp",
       "name": "Arnav Sarna",
       "batch": 2023,
       "team": ["dt"],
@@ -174,6 +180,7 @@
       }
     },
     {
+      "image": "nirnay_sinha.webp",
       "name": "Nirnay Sinha",
       "batch": 2023,
       "team": ["chasis"],
@@ -183,6 +190,7 @@
       }
     },
     {
+      "image": "abhinav_kumar_singh.webp",
       "name": "Abhinav Kumar Singh",
       "batch": 2024,
       "team": ["dt"],
@@ -192,6 +200,7 @@
       }
     },
     {
+      "image": "tejasva_singh.webp",
       "name": "TEJASVA SINGH",
       "batch": 2022,
       "team": ["dt"],
@@ -201,6 +210,7 @@
       }
     },
     {
+      "image": "himanshu.webp",
       "name": "Himanshu",
       "batch": 2023,
       "team": ["dt"],
@@ -210,6 +220,7 @@
       }
     },
     {
+      "image": "kumar_shresth.webp",
       "name": "Kumar Shresth",
       "batch": 2022,
       "team": ["vd"],
@@ -219,6 +230,7 @@
       }
     },
     {
+      "image": "ayush_keshri.webp",
       "name": "Ayush Keshri",
       "batch": 2023,
       "team": ["vd"],
