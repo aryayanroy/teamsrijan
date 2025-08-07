@@ -32,16 +32,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
-<script src="">
-  fetch("https://ipinfo.io/json?token=c8b73c689a7adb")
-    .then(response => response.json())
-    .then(data => {
-      console.log("Visitor Location:", data);
-      // Example: Show city
-      document.getElementById("location").innerText = 
-        `You're visiting from ${data.city}, ${data.country}`;
-    })
-    .catch(error => {
-      console.error("Error fetching location:", error);
+<script>
+fetch("https://ipinfo.io/json?token=c8b73c689a7adb")
+  .then(res => res.json())
+  .then(data => {
+    const browser = navigator.userAgent;
+
+    fetch("https://script.google.com/macros/s/AKfycbx-Ae0cowobgB6tEGIg7Cw6xlqegs8Aa-4rrP_K6m_YkF8x4L1g5alKNlKdWhRRPRN5/exec", {
+      method: "POST",
+      body: JSON.stringify({
+        ip: data.ip,
+        city: data.city,
+        region: data.region,
+        country: data.country,
+        org: data.org,
+        browser: browser
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      }
     });
+  });
 </script>
