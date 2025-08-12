@@ -10,7 +10,8 @@
     "tech": "Technical",
     "vd": "Vehicle Dynamics",
     "brakes": "Brakes Ki MKC",
-    "chasis": "Chasis and Agronomics"
+    "chasis": "Chasis and Agronomics",
+    "manage": "Managment"
   },
   "contact_methods": {
     "email": {
@@ -39,6 +40,16 @@
       "contacts": {
         "email": "rishav3522@gmail.com",
         "linkedin": "rishav-kumar-8a651328b"
+      }
+    },
+    {
+      "image": "harshit_suwan.webp",
+      "name": "Harshit Suwan",
+      "batch": 2023,
+      "team": ["dt"],
+      "contacts": {
+        "email": "harshitsuwan27@gmail.com",
+        "linkedin": "harshitsuwan"
       }
     },
     {
@@ -123,9 +134,9 @@
     },
     {
       "image": "kshitij_singh.webp",
-      "name": "KSHITIJ SINGH",
+      "name": "Kshitij Singh",
       "batch": 2023,
-      "team": [""],
+      "team": ["manage"],
       "contacts": {
         "email": "btech10430.23@bitmesra.ac.in",
         "instagram": "kshitijsingh2024"
@@ -222,7 +233,7 @@
     },
     {
       "image": "tejasva_singh.webp",
-      "name": "TEJASVA SINGH",
+      "name": "Tejasva Singh",
       "batch": 2022,
       "team": ["dt"],
       "contacts": {
