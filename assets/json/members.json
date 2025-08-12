@@ -9,7 +9,8 @@
     "dt": "Power Train",
     "tech": "Technical",
     "vd": "Vehicle Dynamics",
-    "brakes": "Brakes"
+    "brakes": "Brakes",
+    "chasis": "Chasis"
   },
   "contact_methods": {
     "email": {
