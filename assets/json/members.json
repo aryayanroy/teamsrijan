@@ -9,7 +9,7 @@
     "dt": "Power Train",
     "tech": "Technical",
     "vd": "Vehicle Dynamics",
-    "brakes": "Brakes",
+    "brakes": "Brakes Ki MKC",
     "chasis": "Chasis and Agronomics"
   },
   "contact_methods": {
@@ -52,6 +52,16 @@
       }
     },
     {
+      "image": "ritwik_kurly.webp",
+      "name": "Ritwik Kurly",
+      "batch": 2022,
+      "team": ["aero"],
+      "contacts": {
+        "email": "btech10636.22@bitmesra.ac.in",
+        "linkedin": "ritwik-kurly-1a0771188"
+      }
+    },
+    {
       "image": "prince_raj.webp",
       "name": "Prince Raj",
       "batch": 2024,
@@ -69,6 +79,16 @@
       "contacts": {
         "email": "mavlsound1602@gmail.com",
         "linkedin": "ayush-nigam-5795022b0"
+      }
+    },
+    {
+      "image": "aryayan_roy.webp",
+      "name": "Aryayan Roy",
+      "batch": 2022,
+      "team": ["tech, dt"],
+      "contacts": {
+        "email": "btech10504.22@bitmesra.ac.in",
+        "linkedin": "aryayanroy"
       }
     },
     {
