@@ -1,4 +1,35 @@
 $(document).ready(function(){
+    $("#heros").owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                margin:10,
+                items:1,
+                stagePadding: 25
+            },
+            425:{
+                margin:25,
+                items:2
+            },
+            576:{
+                margin:10,
+                items:2,
+                stagePadding: 75
+            },
+            768:{
+                margin:25,
+                items:3
+            },
+            992:{
+                margin:25,
+                items:3,
+                stagePadding: 100
+            }
+        }
+    })
     $("#sponsors").owlCarousel({
         loop:true,
         margin:50,

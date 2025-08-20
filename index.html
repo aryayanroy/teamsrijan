@@ -176,62 +176,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
 <script>
-$(document).ready(function(){
-    $("#heros").owlCarousel({
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                margin:10,
-                items:1,
-                stagePadding: 25
-            },
-            425:{
-                margin:25,
-                items:2
-            },
-            576:{
-                margin:10,
-                items:2,
-                stagePadding: 75
-            },
-            768:{
-                margin:25,
-                items:3
-            },
-            992:{
-                margin:25,
-                items:3,
-                stagePadding: 100
-            }
-        }
-    })
-    $("#sponsors").owlCarousel({
-        loop:true,
-        margin:50,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            425:{
-                items:2
-            },
-            576:{
-                items:3
-            },
-            768:{
-                items:4
-            },
-            992:{
-                items:5
-            }
-        }
-    })
-})
+$(document).ready(function(){$("#heros").owlCarousel({loop:!0,autoplay:!0,autoplayTimeout:4e3,autoplayHoverPause:!0,responsive:{0:{margin:10,items:1,stagePadding:25},425:{margin:25,items:2},576:{margin:10,items:2,stagePadding:75},768:{margin:25,items:3},992:{margin:25,items:3,stagePadding:100}}}),$("#sponsors").owlCarousel({loop:!0,margin:50,autoplay:!0,autoplayTimeout:3e3,autoplayHoverPause:!0,responsive:{0:{items:1},425:{items:2},576:{items:3},768:{items:4},992:{items:5}}})});
 </script>
 </html>

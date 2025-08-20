@@ -51,86 +51,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
 <script>
-$(document).ready(function () {
-        const filename = "/assets/json/members.json";
-        const $batches = $("#batches");
-        const $teams = $("#teams");
-        const $members = $("#members");
-
-        function error_print(msg){
-            $members.html(`<div class="col-12"><p class="mb-0 alert alert-danger text-center">${msg}</p></div>`);
-        }
-
-        $.get(filename, function (data) {
-            
-            function load_options($element, key) {
-                const options = data[key];
-                if (!options) return;
-                for (let i in options) {
-                    const option = new Option(options[i],i);
-                    $element.append(option);
-                }
-            }
-
-            load_options($batches, "batches");
-            load_options($teams, "teams");
-
-            function card(member){
-
-                const image = `/assets/images/crews/${member.image}`;
-
-                let teams = `<p class="card-text d-flex flex-wrap">`;
-                for(const key of member.team){
-                    const team = data.teams[key];
-                    teams += `<small class="badge rounded-pill text-bg-danger m-1">${team}</small>`;
-                }
-                teams += `</p>`;
-
-                let contacts = "";
-                for (key in member.contacts){
-                    const contact = data.contact_methods[key];
-                    contacts += `<a href="${contact.url+member.contacts[key]}" class="nav-item" target="_blank"><i class="${contact.icon} fa-xl"></i></a>`;
-                }
-
-                return `<div class="col-lg-3 col-md-4 col-sm-6">
+$(document).ready(function(){let a="/assets/json/members.min.json",e=$("#batches"),t=$("#teams"),s=$("#members");function l(a){s.html(`<div class="col-12"><p class="mb-0 alert alert-danger text-center">${a}</p></div>`)}$.get(a,function(a){function c(e,t){let s=a[t];if(s)for(let l in s){let c=new Option(s[l],l);e.append(c)}}function n(e){let t=`/assets/images/crews/${e.image}`,s='<p class="card-text d-flex flex-wrap">';for(let l of e.team){let c=a.teams[l];s+=`<small class="badge rounded-pill text-bg-danger m-1">${c}</small>`}s+="</p>";let n="";for(key in e.contacts){let i=a.contact_methods[key];n+=`<a href="${i.url+e.contacts[key]}" class="nav-item" target="_blank"><i class="${i.icon} fa-xl"></i></a>`}return`<div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card h-100">
-                        <div class="ratio ratio-1x1"><img src="${image}" alt="${member.name}" class="card-img-top"></div>
+                        <div class="ratio ratio-1x1"><img src="${t}" alt="${e.name}" class="card-img-top"></div>
                         <div class="card-body d-flex flex-column">
-                            <h4 class="card-title">${member.name}</h4>
-                            ${teams}
-                            <nav class="mt-auto nav nav-justified">${contacts}</nav>
+                            <h4 class="card-title">${e.name}</h4>
+                            ${s}
+                            <nav class="mt-auto nav nav-justified">${n}</nav>
                         </div>
                     </div>
-                </div>`
-            }
-
-            function load_members() {
-                const batch = $batches.val();
-                const team = $teams.val();
-
-                $members.empty();
-                let member_found = false;
-                for (const member of data.members) {
-                    if (member.batch == batch && member.team.includes(team)) {
-                        $members.append(card(member))
-                        member_found = true;
-                    }
-                }
-                if (!member_found) {
-                    error_print(`<i class="fa-solid fa-user-xmark me-2"></i><span>No members found.</span>`);
-                }
-            }
-
-            load_members();
-
-            $batches.add($teams).on("change", function(){
-                load_members();
-            });
-
-        }).fail(function (jqxhr, textStatus, error) {
-            console.error("Failed to load", filename, "=>", textStatus, error);
-            error_print("Failed to load members.");
-        });
-    });
+                </div>`}function i(){let c=e.val(),i=t.val();s.empty();let o=!1;for(let d of a.members)d.batch==c&&d.team.includes(i)&&(s.append(n(d)),o=!0);o||l('<i class="fa-solid fa-user-xmark me-2"></i><span>No members found.</span>')}c(e,"batches"),c(t,"teams"),i(),e.add(t).on("change",function(){i()})}).fail(function(e,t,s){console.error("Failed to load",a,"=>",t,s),l("Failed to load members.")})});
 </script>
 </html>
