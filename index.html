@@ -121,7 +121,40 @@
             </section>
             <hr>
             <section>
-                <h2>OUR SPONSORS</h2>
+                <h2>Position of Responsibility</h2>
+                <div id="heros" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <div class="ratio ratio-1x1"><img src="/assets/images/crews/arijit_basu.webp" alt="Arijit Basu" class="card-img-top"></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Arijit Basu</h4>
+                                <p class="h6 card-text text-danger">Captain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="ratio ratio-1x1"><img src="/assets/images/crews/tejasva_singh.webp" alt="Tejasva Singh" class="card-img-top"></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Tejasva Singh</h4>
+                                <p class="h6 card-text text-danger">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="ratio ratio-1x1"><img src="/assets/images/crews/aryayan_roy.webp" alt="Aryayan Roy" class="card-img-top"></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Aryayan Roy</h4>
+                                <p class="h6 card-text text-danger">Tech Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h2>Oour Sponsors</h2>
                 <div id="sponsors" class="owl-carousel owl-theme">
                     <div class="item ratio ratio-1x1"><img src="/assets/images/sponsors/solidworks.webp" alt="SolidWorks" class="object-fit-contain"></div>
                     <div class="item ratio ratio-1x1"><img src="/assets/images/sponsors/ti.webp" alt="Texas Instruments" class="object-fit-contain"></div>
@@ -143,6 +176,62 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/script.min.js"></script>
 <script>
-    $(document).ready(function(){$("#sponsors").owlCarousel({loop:!0,margin:50,autoplay:!0,autoplayTimeout:3e3,autoplayHoverPause:!0,responsive:{0:{items:1},425:{items:2},576:{items:3},768:{items:4},992:{items:5}}})});
+$(document).ready(function(){
+    $("#heros").owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                margin:10,
+                items:1,
+                stagePadding: 25
+            },
+            425:{
+                margin:25,
+                items:2
+            },
+            576:{
+                margin:10,
+                items:2,
+                stagePadding: 75
+            },
+            768:{
+                margin:25,
+                items:3
+            },
+            992:{
+                margin:25,
+                items:3,
+                stagePadding: 100
+            }
+        }
+    })
+    $("#sponsors").owlCarousel({
+        loop:true,
+        margin:50,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            425:{
+                items:2
+            },
+            576:{
+                items:3
+            },
+            768:{
+                items:4
+            },
+            992:{
+                items:5
+            }
+        }
+    })
+})
 </script>
 </html>
